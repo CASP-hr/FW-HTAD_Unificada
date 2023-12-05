@@ -1,0 +1,1776 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"347 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 347: void EUSART1_Write(uint8_t txData);
+[v _EUSART1_Write `(v ~T0 @X0 0 ef1`uc ]
+"212
+[; ;./mcc_generated_files/eusart1.h: 212: _Bool EUSART1_is_rx_ready(void);
+[v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
+"327
+[; ;./mcc_generated_files/eusart1.h: 327: uint8_t EUSART1_Read(void);
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"21 ./ServiceTimer.h
+[; ;./ServiceTimer.h: 21:     uint32_t SRV_TIMER_GetTick(void);
+[v _SRV_TIMER_GetTick `(ul ~T0 @X0 0 ef ]
+"97 ./Utilities.h
+[; ;./Utilities.h: 97: typedef struct {
+[s S17 `uc 1 `uc 1 ]
+[n S17 . negativo positivo ]
+"53
+[; ;./Utilities.h: 53:     struct {
+[s S10 :8 `uc 1 :8 `uc 1 :8 `uc 1 :8 `uc 1 :8 `uc 1 :8 `uc 1 :8 `uc 1 ]
+[n S10 . pos1 pos2 pos3 pos4 pos5 pos6 pos7 ]
+"51
+[; ;./Utilities.h: 51: typedef union {
+[u S9 `S10 1 `uc -> 7 `i ]
+[n S9 . . value ]
+"107
+[; ;./Utilities.h: 107: typedef struct {
+[s S19 `f 1 `f 1 `f 1 `us 1 `us 1 `us 1 `S17 1 `S17 1 `S17 1 `us 1 `a 1 `S9 1 `uc 1 ]
+[n S19 . temperatureS1 temperatureS2 temperatureS3 DD DT CO2 erroSensorS1 erroSensorS2 erroSensorS3 contWDT ResetWDT version senha ]
+"7474 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7474:     struct {
+[s S391 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S391 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"7484
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7484:     struct {
+[s S392 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S392 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"7473
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7473: typedef union {
+[u S390 `S391 1 `S392 1 ]
+[n S390 . . . ]
+"7495
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7495: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
+[v _LATCbits `VS390 ~T0 @X0 0 e@3979 ]
+"229 Driver_DirectNet.c
+[; ;Driver_DirectNet.c: 229:                             objetoHTAD_DirectNet->temperatureS1 = SRV_ADT7410_GetTemperature(SENSOR_S1, CELSIUS);
+[c E519 1 2 3 .. ]
+[n E519 . SENSOR_S1 SENSOR_S2 SENSOR_S3  ]
+[c E515 0 1 .. ]
+[n E515 . CELSIUS FAHRENHEIT  ]
+"28 ./ServiceADT7410.h
+[; ;./ServiceADT7410.h: 28:    float SRV_ADT7410_GetTemperature(Sensor_e sensor ,TypeRead_e typeRead );
+[v _SRV_ADT7410_GetTemperature `(f ~T0 @X0 0 ef2`E519`E515 ]
+"13 ./Driver_Analog.h
+[; ;./Driver_Analog.h: 13: uint16_t Driver_Analog_GetValueAN0();
+[v _Driver_Analog_GetValueAN0 `(us ~T0 @X0 0 e? ]
+"16
+[; ;./Driver_Analog.h: 16: uint16_t Driver_Analog_GetValueAN1();
+[v _Driver_Analog_GetValueAN1 `(us ~T0 @X0 0 e? ]
+"19
+[; ;./Driver_Analog.h: 19: uint16_t Driver_Analog_GetValueAN3();
+[v _Driver_Analog_GetValueAN3 `(us ~T0 @X0 0 e? ]
+"259 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 259: _Bool EUSART1_is_tx_done(void);
+[v _EUSART1_is_tx_done `(a ~T0 @X0 0 ef ]
+"126 ./Utilities.h
+[; ;./Utilities.h: 126: _Bool habilitaRefrescamento = 0;
+[v _habilitaRefrescamento `a ~T0 @X0 1 e ]
+[i _habilitaRefrescamento
+-> -> 0 `i `a
+]
+"54 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 54: __asm("ANSELA equ 0F38h");
+[; <" ANSELA equ 0F38h ;# ">
+"99
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 99: __asm("ANSELB equ 0F39h");
+[; <" ANSELB equ 0F39h ;# ">
+"149
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 149: __asm("ANSELC equ 0F3Ah");
+[; <" ANSELC equ 0F3Ah ;# ">
+"200
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 200: __asm("PMD2 equ 0F3Dh");
+[; <" PMD2 equ 0F3Dh ;# ">
+"238
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 238: __asm("PMD1 equ 0F3Eh");
+[; <" PMD1 equ 0F3Eh ;# ">
+"303
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 303: __asm("PMD0 equ 0F3Fh");
+[; <" PMD0 equ 0F3Fh ;# ">
+"380
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 380: __asm("VREFCON2 equ 0F40h");
+[; <" VREFCON2 equ 0F40h ;# ">
+"385
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 385: __asm("DACCON1 equ 0F40h");
+[; <" DACCON1 equ 0F40h ;# ">
+"482
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 482: __asm("VREFCON1 equ 0F41h");
+[; <" VREFCON1 equ 0F41h ;# ">
+"487
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 487: __asm("DACCON0 equ 0F41h");
+[; <" DACCON0 equ 0F41h ;# ">
+"602
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 602: __asm("VREFCON0 equ 0F42h");
+[; <" VREFCON0 equ 0F42h ;# ">
+"607
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 607: __asm("FVRCON equ 0F42h");
+[; <" FVRCON equ 0F42h ;# ">
+"696
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 696: __asm("CTMUICON equ 0F43h");
+[; <" CTMUICON equ 0F43h ;# ">
+"701
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 701: __asm("CTMUICONH equ 0F43h");
+[; <" CTMUICONH equ 0F43h ;# ">
+"846
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 846: __asm("CTMUCONL equ 0F44h");
+[; <" CTMUCONL equ 0F44h ;# ">
+"851
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 851: __asm("CTMUCON1 equ 0F44h");
+[; <" CTMUCON1 equ 0F44h ;# ">
+"1000
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1000: __asm("CTMUCONH equ 0F45h");
+[; <" CTMUCONH equ 0F45h ;# ">
+"1005
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1005: __asm("CTMUCON0 equ 0F45h");
+[; <" CTMUCON0 equ 0F45h ;# ">
+"1112
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1112: __asm("SRCON1 equ 0F46h");
+[; <" SRCON1 equ 0F46h ;# ">
+"1174
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1174: __asm("SRCON0 equ 0F47h");
+[; <" SRCON0 equ 0F47h ;# ">
+"1245
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1245: __asm("CCPTMRS1 equ 0F48h");
+[; <" CCPTMRS1 equ 0F48h ;# ">
+"1297
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1297: __asm("CCPTMRS0 equ 0F49h");
+[; <" CCPTMRS0 equ 0F49h ;# ">
+"1371
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1371: __asm("T6CON equ 0F4Ah");
+[; <" T6CON equ 0F4Ah ;# ">
+"1442
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1442: __asm("PR6 equ 0F4Bh");
+[; <" PR6 equ 0F4Bh ;# ">
+"1462
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1462: __asm("TMR6 equ 0F4Ch");
+[; <" TMR6 equ 0F4Ch ;# ">
+"1482
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1482: __asm("T5GCON equ 0F4Dh");
+[; <" T5GCON equ 0F4Dh ;# ">
+"1577
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1577: __asm("T5CON equ 0F4Eh");
+[; <" T5CON equ 0F4Eh ;# ">
+"1686
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1686: __asm("TMR5 equ 0F4Fh");
+[; <" TMR5 equ 0F4Fh ;# ">
+"1693
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1693: __asm("TMR5L equ 0F4Fh");
+[; <" TMR5L equ 0F4Fh ;# ">
+"1713
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1713: __asm("TMR5H equ 0F50h");
+[; <" TMR5H equ 0F50h ;# ">
+"1733
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1733: __asm("T4CON equ 0F51h");
+[; <" T4CON equ 0F51h ;# ">
+"1804
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1804: __asm("PR4 equ 0F52h");
+[; <" PR4 equ 0F52h ;# ">
+"1824
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1824: __asm("TMR4 equ 0F53h");
+[; <" TMR4 equ 0F53h ;# ">
+"1844
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1844: __asm("CCP5CON equ 0F54h");
+[; <" CCP5CON equ 0F54h ;# ">
+"1908
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1908: __asm("CCPR5 equ 0F55h");
+[; <" CCPR5 equ 0F55h ;# ">
+"1915
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1915: __asm("CCPR5L equ 0F55h");
+[; <" CCPR5L equ 0F55h ;# ">
+"1935
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1935: __asm("CCPR5H equ 0F56h");
+[; <" CCPR5H equ 0F56h ;# ">
+"1955
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 1955: __asm("CCP4CON equ 0F57h");
+[; <" CCP4CON equ 0F57h ;# ">
+"2019
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2019: __asm("CCPR4 equ 0F58h");
+[; <" CCPR4 equ 0F58h ;# ">
+"2026
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2026: __asm("CCPR4L equ 0F58h");
+[; <" CCPR4L equ 0F58h ;# ">
+"2046
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2046: __asm("CCPR4H equ 0F59h");
+[; <" CCPR4H equ 0F59h ;# ">
+"2066
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2066: __asm("PSTR3CON equ 0F5Ah");
+[; <" PSTR3CON equ 0F5Ah ;# ">
+"2142
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2142: __asm("ECCP3AS equ 0F5Bh");
+[; <" ECCP3AS equ 0F5Bh ;# ">
+"2147
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2147: __asm("CCP3AS equ 0F5Bh");
+[; <" CCP3AS equ 0F5Bh ;# ">
+"2384
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2384: __asm("PWM3CON equ 0F5Ch");
+[; <" PWM3CON equ 0F5Ch ;# ">
+"2454
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2454: __asm("CCP3CON equ 0F5Dh");
+[; <" CCP3CON equ 0F5Dh ;# ">
+"2536
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2536: __asm("CCPR3 equ 0F5Eh");
+[; <" CCPR3 equ 0F5Eh ;# ">
+"2543
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2543: __asm("CCPR3L equ 0F5Eh");
+[; <" CCPR3L equ 0F5Eh ;# ">
+"2563
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2563: __asm("CCPR3H equ 0F5Fh");
+[; <" CCPR3H equ 0F5Fh ;# ">
+"2583
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2583: __asm("SLRCON equ 0F60h");
+[; <" SLRCON equ 0F60h ;# ">
+"2615
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2615: __asm("WPUB equ 0F61h");
+[; <" WPUB equ 0F61h ;# ">
+"2677
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2677: __asm("IOCB equ 0F62h");
+[; <" IOCB equ 0F62h ;# ">
+"2716
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2716: __asm("PSTR2CON equ 0F63h");
+[; <" PSTR2CON equ 0F63h ;# ">
+"2856
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2856: __asm("ECCP2AS equ 0F64h");
+[; <" ECCP2AS equ 0F64h ;# ">
+"2861
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 2861: __asm("CCP2AS equ 0F64h");
+[; <" CCP2AS equ 0F64h ;# ">
+"3098
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3098: __asm("PWM2CON equ 0F65h");
+[; <" PWM2CON equ 0F65h ;# ">
+"3168
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3168: __asm("CCP2CON equ 0F66h");
+[; <" CCP2CON equ 0F66h ;# ">
+"3250
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3250: __asm("CCPR2 equ 0F67h");
+[; <" CCPR2 equ 0F67h ;# ">
+"3257
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3257: __asm("CCPR2L equ 0F67h");
+[; <" CCPR2L equ 0F67h ;# ">
+"3277
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3277: __asm("CCPR2H equ 0F68h");
+[; <" CCPR2H equ 0F68h ;# ">
+"3297
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3297: __asm("SSP2CON3 equ 0F69h");
+[; <" SSP2CON3 equ 0F69h ;# ">
+"3359
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3359: __asm("SSP2MSK equ 0F6Ah");
+[; <" SSP2MSK equ 0F6Ah ;# ">
+"3429
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3429: __asm("SSP2CON2 equ 0F6Bh");
+[; <" SSP2CON2 equ 0F6Bh ;# ">
+"3574
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3574: __asm("SSP2CON1 equ 0F6Ch");
+[; <" SSP2CON1 equ 0F6Ch ;# ">
+"3694
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 3694: __asm("SSP2STAT equ 0F6Dh");
+[; <" SSP2STAT equ 0F6Dh ;# ">
+"4094
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4094: __asm("SSP2ADD equ 0F6Eh");
+[; <" SSP2ADD equ 0F6Eh ;# ">
+"4164
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4164: __asm("SSP2BUF equ 0F6Fh");
+[; <" SSP2BUF equ 0F6Fh ;# ">
+"4184
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4184: __asm("BAUDCON2 equ 0F70h");
+[; <" BAUDCON2 equ 0F70h ;# ">
+"4189
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4189: __asm("BAUD2CON equ 0F70h");
+[; <" BAUD2CON equ 0F70h ;# ">
+"4446
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4446: __asm("RCSTA2 equ 0F71h");
+[; <" RCSTA2 equ 0F71h ;# ">
+"4451
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4451: __asm("RC2STA equ 0F71h");
+[; <" RC2STA equ 0F71h ;# ">
+"4734
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4734: __asm("TXSTA2 equ 0F72h");
+[; <" TXSTA2 equ 0F72h ;# ">
+"4739
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4739: __asm("TX2STA equ 0F72h");
+[; <" TX2STA equ 0F72h ;# ">
+"4986
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4986: __asm("TXREG2 equ 0F73h");
+[; <" TXREG2 equ 0F73h ;# ">
+"4991
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 4991: __asm("TX2REG equ 0F73h");
+[; <" TX2REG equ 0F73h ;# ">
+"5024
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5024: __asm("RCREG2 equ 0F74h");
+[; <" RCREG2 equ 0F74h ;# ">
+"5029
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5029: __asm("RC2REG equ 0F74h");
+[; <" RC2REG equ 0F74h ;# ">
+"5062
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5062: __asm("SPBRG2 equ 0F75h");
+[; <" SPBRG2 equ 0F75h ;# ">
+"5067
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5067: __asm("SP2BRG equ 0F75h");
+[; <" SP2BRG equ 0F75h ;# ">
+"5100
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5100: __asm("SPBRGH2 equ 0F76h");
+[; <" SPBRGH2 equ 0F76h ;# ">
+"5105
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5105: __asm("SP2BRGH equ 0F76h");
+[; <" SP2BRGH equ 0F76h ;# ">
+"5138
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5138: __asm("CM2CON1 equ 0F77h");
+[; <" CM2CON1 equ 0F77h ;# ">
+"5143
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5143: __asm("CM12CON equ 0F77h");
+[; <" CM12CON equ 0F77h ;# ">
+"5260
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5260: __asm("CM2CON0 equ 0F78h");
+[; <" CM2CON0 equ 0F78h ;# ">
+"5265
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5265: __asm("CM2CON equ 0F78h");
+[; <" CM2CON equ 0F78h ;# ">
+"5540
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5540: __asm("CM1CON0 equ 0F79h");
+[; <" CM1CON0 equ 0F79h ;# ">
+"5545
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5545: __asm("CM1CON equ 0F79h");
+[; <" CM1CON equ 0F79h ;# ">
+"5962
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5962: __asm("PIE4 equ 0F7Ah");
+[; <" PIE4 equ 0F7Ah ;# ">
+"5994
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 5994: __asm("PIR4 equ 0F7Bh");
+[; <" PIR4 equ 0F7Bh ;# ">
+"6026
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6026: __asm("IPR4 equ 0F7Ch");
+[; <" IPR4 equ 0F7Ch ;# ">
+"6066
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6066: __asm("PIE5 equ 0F7Dh");
+[; <" PIE5 equ 0F7Dh ;# ">
+"6098
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6098: __asm("PIR5 equ 0F7Eh");
+[; <" PIR5 equ 0F7Eh ;# ">
+"6130
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6130: __asm("IPR5 equ 0F7Fh");
+[; <" IPR5 equ 0F7Fh ;# ">
+"6176
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6176: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"6467
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6467: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"6840
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 6840: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"7171
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7171: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"7246
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7246: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"7358
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7358: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"7470
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7470: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"7582
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7582: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"7587
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7587: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"7804
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7804: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"7809
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 7809: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"8026
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8026: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"8031
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8031: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"8248
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8248: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"8269
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8269: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"8339
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8339: __asm("HLVDCON equ 0F9Ch");
+[; <" HLVDCON equ 0F9Ch ;# ">
+"8344
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8344: __asm("LVDCON equ 0F9Ch");
+[; <" LVDCON equ 0F9Ch ;# ">
+"8619
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8619: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"8696
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8696: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"8773
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8773: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"8850
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8850: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"8936
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 8936: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"9022
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9022: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"9108
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9108: __asm("PIE3 equ 0FA3h");
+[; <" PIE3 equ 0FA3h ;# ">
+"9218
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9218: __asm("PIR3 equ 0FA4h");
+[; <" PIR3 equ 0FA4h ;# ">
+"9296
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9296: __asm("IPR3 equ 0FA5h");
+[; <" IPR3 equ 0FA5h ;# ">
+"9374
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9374: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"9440
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9440: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"9460
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9460: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"9480
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9480: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"9550
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9550: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"9555
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9555: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"9559
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 9559: __asm("RC1STA equ 0FABh");
+[; <" RC1STA equ 0FABh ;# ">
+"10006
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10006: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"10011
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10011: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"10015
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10015: __asm("TX1STA equ 0FACh");
+[; <" TX1STA equ 0FACh ;# ">
+"10381
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10381: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"10386
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10386: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"10390
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10390: __asm("TX1REG equ 0FADh");
+[; <" TX1REG equ 0FADh ;# ">
+"10459
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10459: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"10464
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10464: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"10468
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10468: __asm("RC1REG equ 0FAEh");
+[; <" RC1REG equ 0FAEh ;# ">
+"10537
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10537: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"10542
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10542: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"10546
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10546: __asm("SP1BRG equ 0FAFh");
+[; <" SP1BRG equ 0FAFh ;# ">
+"10615
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10615: __asm("SPBRGH1 equ 0FB0h");
+[; <" SPBRGH1 equ 0FB0h ;# ">
+"10620
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10620: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"10624
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10624: __asm("SP1BRGH equ 0FB0h");
+[; <" SP1BRGH equ 0FB0h ;# ">
+"10693
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10693: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"10801
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10801: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"10808
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10808: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"10828
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10828: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"10848
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10848: __asm("T3GCON equ 0FB4h");
+[; <" T3GCON equ 0FB4h ;# ">
+"10943
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10943: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"10948
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 10948: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"11325
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11325: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"11330
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11330: __asm("PWMCON equ 0FB7h");
+[; <" PWMCON equ 0FB7h ;# ">
+"11579
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11579: __asm("BAUDCON1 equ 0FB8h");
+[; <" BAUDCON1 equ 0FB8h ;# ">
+"11584
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11584: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"11588
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11588: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"11592
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 11592: __asm("BAUD1CON equ 0FB8h");
+[; <" BAUD1CON equ 0FB8h ;# ">
+"12253
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12253: __asm("PSTR1CON equ 0FB9h");
+[; <" PSTR1CON equ 0FB9h ;# ">
+"12258
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12258: __asm("PSTRCON equ 0FB9h");
+[; <" PSTRCON equ 0FB9h ;# ">
+"12403
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12403: __asm("T2CON equ 0FBAh");
+[; <" T2CON equ 0FBAh ;# ">
+"12474
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12474: __asm("PR2 equ 0FBBh");
+[; <" PR2 equ 0FBBh ;# ">
+"12494
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12494: __asm("TMR2 equ 0FBCh");
+[; <" TMR2 equ 0FBCh ;# ">
+"12514
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12514: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"12596
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12596: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"12603
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12603: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"12623
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12623: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"12643
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12643: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"12714
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12714: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"12782
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12782: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"12907
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12907: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"12914
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12914: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"12934
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12934: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"12954
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12954: __asm("SSP1CON2 equ 0FC5h");
+[; <" SSP1CON2 equ 0FC5h ;# ">
+"12959
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 12959: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"13308
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 13308: __asm("SSP1CON1 equ 0FC6h");
+[; <" SSP1CON1 equ 0FC6h ;# ">
+"13313
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 13313: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"13546
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 13546: __asm("SSP1STAT equ 0FC7h");
+[; <" SSP1STAT equ 0FC7h ;# ">
+"13551
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 13551: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"14176
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14176: __asm("SSP1ADD equ 0FC8h");
+[; <" SSP1ADD equ 0FC8h ;# ">
+"14181
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14181: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"14430
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14430: __asm("SSP1BUF equ 0FC9h");
+[; <" SSP1BUF equ 0FC9h ;# ">
+"14435
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14435: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"14484
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14484: __asm("SSP1MSK equ 0FCAh");
+[; <" SSP1MSK equ 0FCAh ;# ">
+"14489
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14489: __asm("SSPMSK equ 0FCAh");
+[; <" SSPMSK equ 0FCAh ;# ">
+"14622
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14622: __asm("SSP1CON3 equ 0FCBh");
+[; <" SSP1CON3 equ 0FCBh ;# ">
+"14627
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14627: __asm("SSPCON3 equ 0FCBh");
+[; <" SSPCON3 equ 0FCBh ;# ">
+"14744
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14744: __asm("T1GCON equ 0FCCh");
+[; <" T1GCON equ 0FCCh ;# ">
+"14839
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14839: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"14952
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14952: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"14959
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14959: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"14979
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14979: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"14999
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 14999: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"15132
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15132: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"15160
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15160: __asm("OSCCON2 equ 0FD2h");
+[; <" OSCCON2 equ 0FD2h ;# ">
+"15217
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15217: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"15300
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15300: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"15370
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15370: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"15377
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15377: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"15397
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15397: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"15417
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15417: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"15488
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15488: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"15495
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15495: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"15515
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15515: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"15522
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15522: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"15542
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15542: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"15562
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15562: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"15582
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15582: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"15602
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15602: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"15622
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15622: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"15629
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15629: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"15636
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15636: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"15656
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15656: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"15663
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15663: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"15683
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15683: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"15703
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15703: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"15723
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15723: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"15743
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15743: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"15763
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15763: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"15801
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15801: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"15808
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15808: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"15828
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15828: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"15835
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15835: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"15855
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15855: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"15875
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15875: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"15895
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15895: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"15915
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15915: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"15935
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 15935: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"16027
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16027: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"16097
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16097: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"16214
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16214: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"16221
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16221: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"16241
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16241: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"16261
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16261: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"16283
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16283: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"16290
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16290: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"16310
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16310: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"16330
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16330: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"16361
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16361: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"16368
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16368: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"16375
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16375: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"16395
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16395: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"16415
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16415: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"16422
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16422: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"16528
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16528: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"16535
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16535: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"16555
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16555: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"16575
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f25k22.h: 16575: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"22 Driver_DirectNet.c
+[; ;Driver_DirectNet.c: 22: _Bool recebeu_Serial = 0;
+[v _recebeu_Serial `a ~T0 @X0 1 e ]
+[i _recebeu_Serial
+-> -> 0 `i `a
+]
+"23
+[; ;Driver_DirectNet.c: 23: unsigned long tempo = 0;
+[v _tempo `ul ~T0 @X0 1 e ]
+[i _tempo
+-> -> -> 0 `i `l `ul
+]
+"24
+[; ;Driver_DirectNet.c: 24: _Bool CPU_Comunicando = 0;
+[v _CPU_Comunicando `a ~T0 @X0 1 e ]
+[i _CPU_Comunicando
+-> -> 0 `i `a
+]
+"25
+[; ;Driver_DirectNet.c: 25: uint8_t respondeHTAD = 0;
+[v _respondeHTAD `uc ~T0 @X0 1 e ]
+[i _respondeHTAD
+-> -> 0 `i `uc
+]
+"26
+[; ;Driver_DirectNet.c: 26: uint8_t ID_Responde = 0;
+[v _ID_Responde `uc ~T0 @X0 1 e ]
+[i _ID_Responde
+-> -> 0 `i `uc
+]
+"28
+[; ;Driver_DirectNet.c: 28: char recebeu[20];
+[v _recebeu `uc ~T0 @X0 -> 20 `i e ]
+"29
+[; ;Driver_DirectNet.c: 29: uint16_t contRX = 0;
+[v _contRX `us ~T0 @X0 1 e ]
+[i _contRX
+-> -> 0 `i `us
+]
+"30
+[; ;Driver_DirectNet.c: 30: uint8_t stateDirectNet = 0;
+[v _stateDirectNet `uc ~T0 @X0 1 e ]
+[i _stateDirectNet
+-> -> 0 `i `uc
+]
+"31
+[; ;Driver_DirectNet.c: 31: uint8_t recebeuID = 0;
+[v _recebeuID `uc ~T0 @X0 1 e ]
+[i _recebeuID
+-> -> 0 `i `uc
+]
+"34
+[; ;Driver_DirectNet.c: 34: uint8_t bufferEnvio[30];
+[v _bufferEnvio `uc ~T0 @X0 -> 30 `i e ]
+"35
+[; ;Driver_DirectNet.c: 35: uint8_t bufferLcr[30];
+[v _bufferLcr `uc ~T0 @X0 -> 30 `i e ]
+"36
+[; ;Driver_DirectNet.c: 36: uint8_t bufferDadosCELSIUS[4];
+[v _bufferDadosCELSIUS `uc ~T0 @X0 -> 4 `i e ]
+"37
+[; ;Driver_DirectNet.c: 37: uint8_t bufferDadosFAHRENHEIT[5];
+[v _bufferDadosFAHRENHEIT `uc ~T0 @X0 -> 5 `i e ]
+"38
+[; ;Driver_DirectNet.c: 38: uint8_t bufferDadosValorBruto[7];
+[v _bufferDadosValorBruto `uc ~T0 @X0 -> 7 `i e ]
+"39
+[; ;Driver_DirectNet.c: 39: uint8_t bufferDadosDDDTCO2[30];
+[v _bufferDadosDDDTCO2 `uc ~T0 @X0 -> 30 `i e ]
+"43
+[; ;Driver_DirectNet.c: 43: uint8_t calculateLRC(uint8_t* data, uint8_t dataLength) {
+[v _calculateLRC `(uc ~T0 @X0 1 ef2`*uc`uc ]
+{
+[e :U _calculateLRC ]
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _dataLength `uc ~T0 @X0 1 r2 ]
+[f ]
+"44
+[; ;Driver_DirectNet.c: 44:     uint8_t lrc = 0;
+[v _lrc `uc ~T0 @X0 1 a ]
+[e = _lrc -> -> 0 `i `uc ]
+"45
+[; ;Driver_DirectNet.c: 45:     for (uint8_t i = 0; i < dataLength; i++) {
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 847  ]
+[e :U 844 ]
+{
+"46
+[; ;Driver_DirectNet.c: 46:         lrc ^= data[i];
+[e =^ _lrc -> *U + _data * -> _i `ux -> -> # *U _data `ui `ux `uc ]
+"47
+[; ;Driver_DirectNet.c: 47:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 847 ]
+[e $ < -> _i `i -> _dataLength `i 844  ]
+[e :U 845 ]
+}
+"48
+[; ;Driver_DirectNet.c: 48:     return lrc;
+[e ) _lrc ]
+[e $UE 843  ]
+"49
+[; ;Driver_DirectNet.c: 49: }
+[e :UE 843 ]
+}
+"51
+[; ;Driver_DirectNet.c: 51: void DirectNet_enviaDadosDDDTCO2(void)
+[v _DirectNet_enviaDadosDDDTCO2 `(v ~T0 @X0 1 ef ]
+"52
+[; ;Driver_DirectNet.c: 52: {
+{
+[e :U _DirectNet_enviaDadosDDDTCO2 ]
+[f ]
+"55
+[; ;Driver_DirectNet.c: 55:     uint8_t LCR = calculateLRC(bufferDadosDDDTCO2,23);
+[v _LCR `uc ~T0 @X0 1 a ]
+[e = _LCR ( _calculateLRC (2 , &U _bufferDadosDDDTCO2 -> -> 23 `i `uc ]
+"57
+[; ;Driver_DirectNet.c: 57:     bufferEnvio[0] = 0x06;
+[e = *U + &U _bufferEnvio * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 6 `i `uc ]
+"58
+[; ;Driver_DirectNet.c: 58:     bufferEnvio[1] = 0x02;
+[e = *U + &U _bufferEnvio * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 2 `i `uc ]
+"59
+[; ;Driver_DirectNet.c: 59:     bufferEnvio[2] = bufferDadosDDDTCO2[0];
+[e = *U + &U _bufferEnvio * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"60
+[; ;Driver_DirectNet.c: 60:     bufferEnvio[3] = bufferDadosDDDTCO2[1];
+[e = *U + &U _bufferEnvio * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"61
+[; ;Driver_DirectNet.c: 61:     bufferEnvio[4] = bufferDadosDDDTCO2[2];
+[e = *U + &U _bufferEnvio * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"62
+[; ;Driver_DirectNet.c: 62:     bufferEnvio[5] = bufferDadosDDDTCO2[3];
+[e = *U + &U _bufferEnvio * -> -> -> 5 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"63
+[; ;Driver_DirectNet.c: 63:     bufferEnvio[6] = bufferDadosDDDTCO2[4];
+[e = *U + &U _bufferEnvio * -> -> -> 6 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"64
+[; ;Driver_DirectNet.c: 64:     bufferEnvio[7] = bufferDadosDDDTCO2[5];
+[e = *U + &U _bufferEnvio * -> -> -> 7 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 5 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"65
+[; ;Driver_DirectNet.c: 65:     bufferEnvio[8] = bufferDadosDDDTCO2[6];
+[e = *U + &U _bufferEnvio * -> -> -> 8 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 6 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"66
+[; ;Driver_DirectNet.c: 66:     bufferEnvio[9] = bufferDadosDDDTCO2[7];
+[e = *U + &U _bufferEnvio * -> -> -> 9 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 7 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"67
+[; ;Driver_DirectNet.c: 67:     bufferEnvio[10] = bufferDadosDDDTCO2[8];
+[e = *U + &U _bufferEnvio * -> -> -> 10 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 8 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"68
+[; ;Driver_DirectNet.c: 68:     bufferEnvio[11] = bufferDadosDDDTCO2[9];
+[e = *U + &U _bufferEnvio * -> -> -> 11 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 9 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"69
+[; ;Driver_DirectNet.c: 69:     bufferEnvio[12] = bufferDadosDDDTCO2[10];
+[e = *U + &U _bufferEnvio * -> -> -> 12 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 10 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"70
+[; ;Driver_DirectNet.c: 70:     bufferEnvio[13] = bufferDadosDDDTCO2[11];
+[e = *U + &U _bufferEnvio * -> -> -> 13 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 11 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"71
+[; ;Driver_DirectNet.c: 71:     bufferEnvio[14] = bufferDadosDDDTCO2[12];
+[e = *U + &U _bufferEnvio * -> -> -> 14 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 12 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"72
+[; ;Driver_DirectNet.c: 72:     bufferEnvio[15] = bufferDadosDDDTCO2[13];
+[e = *U + &U _bufferEnvio * -> -> -> 15 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 13 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"73
+[; ;Driver_DirectNet.c: 73:     bufferEnvio[16] = bufferDadosDDDTCO2[14];
+[e = *U + &U _bufferEnvio * -> -> -> 16 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 14 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"74
+[; ;Driver_DirectNet.c: 74:     bufferEnvio[17] = bufferDadosDDDTCO2[15];
+[e = *U + &U _bufferEnvio * -> -> -> 17 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 15 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"75
+[; ;Driver_DirectNet.c: 75:     bufferEnvio[18] = bufferDadosDDDTCO2[16];
+[e = *U + &U _bufferEnvio * -> -> -> 18 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 16 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"76
+[; ;Driver_DirectNet.c: 76:     bufferEnvio[19] = bufferDadosDDDTCO2[17];
+[e = *U + &U _bufferEnvio * -> -> -> 19 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 17 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"77
+[; ;Driver_DirectNet.c: 77:     bufferEnvio[20] = bufferDadosDDDTCO2[18];
+[e = *U + &U _bufferEnvio * -> -> -> 20 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 18 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"78
+[; ;Driver_DirectNet.c: 78:     bufferEnvio[21] = bufferDadosDDDTCO2[19];
+[e = *U + &U _bufferEnvio * -> -> -> 21 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 19 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"79
+[; ;Driver_DirectNet.c: 79:     bufferEnvio[22] = bufferDadosDDDTCO2[20];
+[e = *U + &U _bufferEnvio * -> -> -> 22 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 20 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"80
+[; ;Driver_DirectNet.c: 80:     bufferEnvio[23] = bufferDadosDDDTCO2[21];
+[e = *U + &U _bufferEnvio * -> -> -> 23 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 21 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"81
+[; ;Driver_DirectNet.c: 81:     bufferEnvio[24] = bufferDadosDDDTCO2[22];
+[e = *U + &U _bufferEnvio * -> -> -> 24 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosDDDTCO2 * -> -> -> 22 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux ]
+"83
+[; ;Driver_DirectNet.c: 83:     bufferEnvio[25] = 0x03;
+[e = *U + &U _bufferEnvio * -> -> -> 25 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 3 `i `uc ]
+"84
+[; ;Driver_DirectNet.c: 84:     bufferEnvio[26] = LCR;
+[e = *U + &U _bufferEnvio * -> -> -> 26 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux _LCR ]
+"90
+[; ;Driver_DirectNet.c: 90:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"91
+[; ;Driver_DirectNet.c: 91:     for (i = 0; i < 27; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 27 `i 849  ]
+[e $U 850  ]
+[e :U 849 ]
+{
+"93
+[; ;Driver_DirectNet.c: 93:         EUSART1_Write(bufferEnvio[i]);
+[e ( _EUSART1_Write (1 *U + &U _bufferEnvio * -> -> _i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux ]
+"94
+[; ;Driver_DirectNet.c: 94:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 27 `i 849  ]
+[e :U 850 ]
+}
+"95
+[; ;Driver_DirectNet.c: 95: }
+[e :UE 848 ]
+}
+"97
+[; ;Driver_DirectNet.c: 97: void DirectNet_enviaDadosSensores(void)
+[v _DirectNet_enviaDadosSensores `(v ~T0 @X0 1 ef ]
+"98
+[; ;Driver_DirectNet.c: 98: {
+{
+[e :U _DirectNet_enviaDadosSensores ]
+[f ]
+"99
+[; ;Driver_DirectNet.c: 99:     bufferLcr[0] = 0xAA;
+[e = *U + &U _bufferLcr * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 170 `i `uc ]
+"100
+[; ;Driver_DirectNet.c: 100:     bufferLcr[1] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"101
+[; ;Driver_DirectNet.c: 101:     bufferLcr[2] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"102
+[; ;Driver_DirectNet.c: 102:     bufferLcr[3] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"103
+[; ;Driver_DirectNet.c: 103:     bufferLcr[4] = bufferDadosValorBruto[0];
+[e = *U + &U _bufferLcr * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosValorBruto * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux ]
+"104
+[; ;Driver_DirectNet.c: 104:     bufferLcr[5] = bufferDadosValorBruto[1];
+[e = *U + &U _bufferLcr * -> -> -> 5 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosValorBruto * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux ]
+"105
+[; ;Driver_DirectNet.c: 105:     bufferLcr[6] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 6 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"106
+[; ;Driver_DirectNet.c: 106:     bufferLcr[7] = bufferDadosCELSIUS[0];
+[e = *U + &U _bufferLcr * -> -> -> 7 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"107
+[; ;Driver_DirectNet.c: 107:     bufferLcr[8] = bufferDadosCELSIUS[1];
+[e = *U + &U _bufferLcr * -> -> -> 8 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"108
+[; ;Driver_DirectNet.c: 108:     bufferLcr[9] = bufferDadosCELSIUS[2];
+[e = *U + &U _bufferLcr * -> -> -> 9 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"109
+[; ;Driver_DirectNet.c: 109:     bufferLcr[10] = bufferDadosCELSIUS[3];
+[e = *U + &U _bufferLcr * -> -> -> 10 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"110
+[; ;Driver_DirectNet.c: 110:     bufferLcr[11] = bufferDadosFAHRENHEIT[0];
+[e = *U + &U _bufferLcr * -> -> -> 11 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"111
+[; ;Driver_DirectNet.c: 111:     bufferLcr[12] = bufferDadosFAHRENHEIT[1];
+[e = *U + &U _bufferLcr * -> -> -> 12 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"112
+[; ;Driver_DirectNet.c: 112:     bufferLcr[13] = bufferDadosFAHRENHEIT[2];
+[e = *U + &U _bufferLcr * -> -> -> 13 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"113
+[; ;Driver_DirectNet.c: 113:     bufferLcr[14] = bufferDadosFAHRENHEIT[3];
+[e = *U + &U _bufferLcr * -> -> -> 14 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"114
+[; ;Driver_DirectNet.c: 114:     bufferLcr[15] = bufferDadosFAHRENHEIT[4];
+[e = *U + &U _bufferLcr * -> -> -> 15 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"115
+[; ;Driver_DirectNet.c: 115:     bufferLcr[16] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 16 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"116
+[; ;Driver_DirectNet.c: 116:     bufferLcr[17] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 17 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"117
+[; ;Driver_DirectNet.c: 117:     bufferLcr[18] = ID_Responde;
+[e = *U + &U _bufferLcr * -> -> -> 18 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux _ID_Responde ]
+"118
+[; ;Driver_DirectNet.c: 118:     bufferLcr[19] = 0x00;
+[e = *U + &U _bufferLcr * -> -> -> 19 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 0 `i `uc ]
+"119
+[; ;Driver_DirectNet.c: 119:     bufferLcr[20] = 0x55;
+[e = *U + &U _bufferLcr * -> -> -> 20 `i `ui `ux -> -> # *U &U _bufferLcr `ui `ux -> -> 85 `i `uc ]
+"121
+[; ;Driver_DirectNet.c: 121:     uint8_t LCR = calculateLRC(bufferLcr,21);
+[v _LCR `uc ~T0 @X0 1 a ]
+[e = _LCR ( _calculateLRC (2 , &U _bufferLcr -> -> 21 `i `uc ]
+"124
+[; ;Driver_DirectNet.c: 124:     bufferEnvio[0] = 0x06;
+[e = *U + &U _bufferEnvio * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 6 `i `uc ]
+"125
+[; ;Driver_DirectNet.c: 125:     bufferEnvio[1] = 0x02;
+[e = *U + &U _bufferEnvio * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 2 `i `uc ]
+"126
+[; ;Driver_DirectNet.c: 126:     bufferEnvio[2] = 0xAA;
+[e = *U + &U _bufferEnvio * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 170 `i `uc ]
+"127
+[; ;Driver_DirectNet.c: 127:     bufferEnvio[3] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"128
+[; ;Driver_DirectNet.c: 128:     bufferEnvio[4] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"129
+[; ;Driver_DirectNet.c: 129:     bufferEnvio[5] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 5 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"130
+[; ;Driver_DirectNet.c: 130:     bufferEnvio[6] = bufferDadosValorBruto[0];
+[e = *U + &U _bufferEnvio * -> -> -> 6 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosValorBruto * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux ]
+"131
+[; ;Driver_DirectNet.c: 131:     bufferEnvio[7] = bufferDadosValorBruto[1];
+[e = *U + &U _bufferEnvio * -> -> -> 7 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosValorBruto * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux ]
+"132
+[; ;Driver_DirectNet.c: 132:     bufferEnvio[8] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 8 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"133
+[; ;Driver_DirectNet.c: 133:     bufferEnvio[9] = bufferDadosCELSIUS[0];
+[e = *U + &U _bufferEnvio * -> -> -> 9 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"134
+[; ;Driver_DirectNet.c: 134:     bufferEnvio[10] = bufferDadosCELSIUS[1];
+[e = *U + &U _bufferEnvio * -> -> -> 10 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"135
+[; ;Driver_DirectNet.c: 135:     bufferEnvio[11] = bufferDadosCELSIUS[2];
+[e = *U + &U _bufferEnvio * -> -> -> 11 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"136
+[; ;Driver_DirectNet.c: 136:     bufferEnvio[12] = bufferDadosCELSIUS[3];
+[e = *U + &U _bufferEnvio * -> -> -> 12 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosCELSIUS * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosCELSIUS `ui `ux ]
+"137
+[; ;Driver_DirectNet.c: 137:     bufferEnvio[13] = bufferDadosFAHRENHEIT[0];
+[e = *U + &U _bufferEnvio * -> -> -> 13 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"138
+[; ;Driver_DirectNet.c: 138:     bufferEnvio[14] = bufferDadosFAHRENHEIT[1];
+[e = *U + &U _bufferEnvio * -> -> -> 14 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"139
+[; ;Driver_DirectNet.c: 139:     bufferEnvio[15] = bufferDadosFAHRENHEIT[2];
+[e = *U + &U _bufferEnvio * -> -> -> 15 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"140
+[; ;Driver_DirectNet.c: 140:     bufferEnvio[16] = bufferDadosFAHRENHEIT[3];
+[e = *U + &U _bufferEnvio * -> -> -> 16 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"141
+[; ;Driver_DirectNet.c: 141:     bufferEnvio[17] = bufferDadosFAHRENHEIT[4];
+[e = *U + &U _bufferEnvio * -> -> -> 17 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux *U + &U _bufferDadosFAHRENHEIT * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferDadosFAHRENHEIT `ui `ux ]
+"142
+[; ;Driver_DirectNet.c: 142:     bufferEnvio[18] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 18 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"143
+[; ;Driver_DirectNet.c: 143:     bufferEnvio[19] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 19 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"144
+[; ;Driver_DirectNet.c: 144:     bufferEnvio[20] = ID_Responde;
+[e = *U + &U _bufferEnvio * -> -> -> 20 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux _ID_Responde ]
+"145
+[; ;Driver_DirectNet.c: 145:     bufferEnvio[21] = 0x00;
+[e = *U + &U _bufferEnvio * -> -> -> 21 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 0 `i `uc ]
+"146
+[; ;Driver_DirectNet.c: 146:     bufferEnvio[22] = 0x55;
+[e = *U + &U _bufferEnvio * -> -> -> 22 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 85 `i `uc ]
+"147
+[; ;Driver_DirectNet.c: 147:     bufferEnvio[23] = 0x03;
+[e = *U + &U _bufferEnvio * -> -> -> 23 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux -> -> 3 `i `uc ]
+"148
+[; ;Driver_DirectNet.c: 148:     bufferEnvio[24] = LCR;
+[e = *U + &U _bufferEnvio * -> -> -> 24 `i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux _LCR ]
+"152
+[; ;Driver_DirectNet.c: 152:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"153
+[; ;Driver_DirectNet.c: 153:     for (i = 0; i < 25; i++) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 25 `i 853  ]
+[e $U 854  ]
+[e :U 853 ]
+{
+"155
+[; ;Driver_DirectNet.c: 155:         EUSART1_Write(bufferEnvio[i]);
+[e ( _EUSART1_Write (1 *U + &U _bufferEnvio * -> -> _i `ui `ux -> -> # *U &U _bufferEnvio `ui `ux ]
+"156
+[; ;Driver_DirectNet.c: 156:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 25 `i 853  ]
+[e :U 854 ]
+}
+"157
+[; ;Driver_DirectNet.c: 157: }
+[e :UE 852 ]
+}
+"159
+[; ;Driver_DirectNet.c: 159: void convertFloatToBuffer(float value, uint8_t* buffer, uint8_t bufferSize) {
+[v _convertFloatToBuffer `(v ~T0 @X0 1 ef3`f`*uc`uc ]
+{
+[e :U _convertFloatToBuffer ]
+[v _value `f ~T0 @X0 1 r1 ]
+[v _buffer `*uc ~T0 @X0 1 r2 ]
+[v _bufferSize `uc ~T0 @X0 1 r3 ]
+[f ]
+"160
+[; ;Driver_DirectNet.c: 160:     int val = value * 100;
+[v _val `i ~T0 @X0 1 a ]
+[e = _val -> * _value -> -> 100 `i `f `i ]
+"161
+[; ;Driver_DirectNet.c: 161:     for (size_t i = 0; i < bufferSize; i++) {
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $U 860  ]
+[e :U 857 ]
+{
+"162
+[; ;Driver_DirectNet.c: 162:         buffer[i] = val % 10;
+[e = *U + _buffer * -> _i `ux -> -> # *U _buffer `ui `ux -> % _val -> 10 `i `uc ]
+"163
+[; ;Driver_DirectNet.c: 163:         val /= 10;
+[e =/ _val -> 10 `i ]
+"164
+[; ;Driver_DirectNet.c: 164:     }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 860 ]
+[e $ < _i -> _bufferSize `ui 857  ]
+[e :U 858 ]
+}
+"165
+[; ;Driver_DirectNet.c: 165: }
+[e :UE 856 ]
+}
+"167
+[; ;Driver_DirectNet.c: 167: void DirectNet_Send(void){
+[v _DirectNet_Send `(v ~T0 @X0 1 ef ]
+{
+[e :U _DirectNet_Send ]
+[f ]
+"169
+[; ;Driver_DirectNet.c: 169:     if (EUSART1_is_rx_ready()) {
+[e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 862  ]
+{
+"171
+[; ;Driver_DirectNet.c: 171:         uint8_t rx = EUSART1_Read();
+[v _rx `uc ~T0 @X0 1 a ]
+[e = _rx ( _EUSART1_Read ..  ]
+"172
+[; ;Driver_DirectNet.c: 172:         recebeu[contRX] = rx;
+[e = *U + &U _recebeu * -> _contRX `ux -> -> # *U &U _recebeu `ui `ux -> _rx `uc ]
+"173
+[; ;Driver_DirectNet.c: 173:         contRX++;
+[e ++ _contRX -> -> 1 `i `us ]
+"174
+[; ;Driver_DirectNet.c: 174:         tempo = SRV_TIMER_GetTick();
+[e = _tempo ( _SRV_TIMER_GetTick ..  ]
+"175
+[; ;Driver_DirectNet.c: 175:         recebeu_Serial = 1;
+[e = _recebeu_Serial -> -> 1 `i `a ]
+"176
+[; ;Driver_DirectNet.c: 176:     }
+}
+[e :U 862 ]
+"177
+[; ;Driver_DirectNet.c: 177: }
+[e :UE 861 ]
+}
+"179
+[; ;Driver_DirectNet.c: 179: void DirectNet_Run(Object_t* objetoHTAD_DirectNet) {
+[v _DirectNet_Run `(v ~T0 @X0 1 ef1`*S19 ]
+{
+[e :U _DirectNet_Run ]
+[v _objetoHTAD_DirectNet `*S19 ~T0 @X0 1 r1 ]
+[f ]
+"181
+[; ;Driver_DirectNet.c: 181:     int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"184
+[; ;Driver_DirectNet.c: 184:     if ((SRV_TIMER_GetTick() - tempo > 10) && recebeu_Serial){
+[e $ ! && > - ( _SRV_TIMER_GetTick ..  _tempo -> -> -> 10 `i `l `ul != -> _recebeu_Serial `i -> 0 `i 864  ]
+{
+"185
+[; ;Driver_DirectNet.c: 185:         do { LATCbits.LATC5 = 1; } while(0);
+[e :U 867 ]
+{
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 866 ]
+"187
+[; ;Driver_DirectNet.c: 187:         objetoHTAD_DirectNet->contWDT++;
+[e ++ . *U _objetoHTAD_DirectNet 9 -> -> 1 `i `us ]
+"189
+[; ;Driver_DirectNet.c: 189:         for (i = 0; i < contRX; i++) {
+{
+[e = _i -> 0 `i ]
+[e $U 871  ]
+[e :U 868 ]
+{
+"190
+[; ;Driver_DirectNet.c: 190:             if(recebeu[i] == 0x4E && recebeu[i + 2] == 0x05){
+[e $ ! && == -> *U + &U _recebeu * -> -> _i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 78 `i == -> *U + &U _recebeu * -> -> + _i -> 2 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 5 `i 872  ]
+{
+"191
+[; ;Driver_DirectNet.c: 191:               stateDirectNet = 0;
+[e = _stateDirectNet -> -> 0 `i `uc ]
+"192
+[; ;Driver_DirectNet.c: 192:             }
+}
+[e :U 872 ]
+"193
+[; ;Driver_DirectNet.c: 193:         }
+}
+[e ++ _i -> 1 `i ]
+[e :U 871 ]
+[e $ < -> _i `ui -> _contRX `ui 868  ]
+[e :U 869 ]
+}
+"195
+[; ;Driver_DirectNet.c: 195:         switch(stateDirectNet)
+[e $U 874  ]
+"196
+[; ;Driver_DirectNet.c: 196:         {
+{
+"197
+[; ;Driver_DirectNet.c: 197:             case 0:
+[e :U 875 ]
+"198
+[; ;Driver_DirectNet.c: 198:                 i = 0;
+[e = _i -> 0 `i ]
+"199
+[; ;Driver_DirectNet.c: 199:                 for (i = 0; i < contRX; i++) {
+{
+[e = _i -> 0 `i ]
+[e $U 879  ]
+[e :U 876 ]
+{
+"200
+[; ;Driver_DirectNet.c: 200:                    if(recebeu[i] == 0x4E && recebeu[i + 2] == 0x05){
+[e $ ! && == -> *U + &U _recebeu * -> -> _i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 78 `i == -> *U + &U _recebeu * -> -> + _i -> 2 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 5 `i 880  ]
+{
+"201
+[; ;Driver_DirectNet.c: 201:                         EUSART1_Write(0x4E);
+[e ( _EUSART1_Write (1 -> -> 78 `i `uc ]
+"202
+[; ;Driver_DirectNet.c: 202:                         EUSART1_Write(recebeu[i+1]);
+[e ( _EUSART1_Write (1 -> *U + &U _recebeu * -> -> + _i -> 1 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `uc ]
+"203
+[; ;Driver_DirectNet.c: 203:                         EUSART1_Write(0x06);
+[e ( _EUSART1_Write (1 -> -> 6 `i `uc ]
+"204
+[; ;Driver_DirectNet.c: 204:                         stateDirectNet = 1;
+[e = _stateDirectNet -> -> 1 `i `uc ]
+"205
+[; ;Driver_DirectNet.c: 205:                         recebeuID = recebeu[i+1];
+[e = _recebeuID -> *U + &U _recebeu * -> -> + _i -> 1 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `uc ]
+"206
+[; ;Driver_DirectNet.c: 206:                         respondeHTAD = recebeuID;
+[e = _respondeHTAD _recebeuID ]
+"207
+[; ;Driver_DirectNet.c: 207:                         if(recebeuID == 0x2B){
+[e $ ! == -> _recebeuID `i -> 43 `i 881  ]
+{
+"208
+[; ;Driver_DirectNet.c: 208:                           respondeHTAD = 0x32;
+[e = _respondeHTAD -> -> 50 `i `uc ]
+"209
+[; ;Driver_DirectNet.c: 209:                         }
+}
+[e :U 881 ]
+"210
+[; ;Driver_DirectNet.c: 210:                         objetoHTAD_DirectNet->contWDT = 0;
+[e = . *U _objetoHTAD_DirectNet 9 -> -> 0 `i `us ]
+"211
+[; ;Driver_DirectNet.c: 211:                         break;
+[e $U 877  ]
+"212
+[; ;Driver_DirectNet.c: 212:                     }
+}
+[e :U 880 ]
+"213
+[; ;Driver_DirectNet.c: 213:                 }
+}
+[e ++ _i -> 1 `i ]
+[e :U 879 ]
+[e $ < -> _i `ui -> _contRX `ui 876  ]
+[e :U 877 ]
+}
+"214
+[; ;Driver_DirectNet.c: 214:                 break;
+[e $U 873  ]
+"215
+[; ;Driver_DirectNet.c: 215:             case 1:
+[e :U 882 ]
+"216
+[; ;Driver_DirectNet.c: 216:                 i = 0;
+[e = _i -> 0 `i ]
+"217
+[; ;Driver_DirectNet.c: 217:                 for (i = 0; i < contRX; i++) {
+{
+[e = _i -> 0 `i ]
+[e $U 886  ]
+[e :U 883 ]
+{
+"219
+[; ;Driver_DirectNet.c: 219:                     if( recebeu[i] == 0x01 && recebeu[i + 1] == 0x30 && recebeu[i + 2] == respondeHTAD + 0x10 &&
+[e $ ! && && && == -> *U + &U _recebeu * -> -> _i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 1 `i == -> *U + &U _recebeu * -> -> + _i -> 1 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 48 `i == -> *U + &U _recebeu * -> -> + _i -> 2 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `i + -> _respondeHTAD `i -> 16 `i == -> *U + &U _recebeu * -> -> + _i -> 15 `i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 23 `i 887  ]
+"225
+[; ;Driver_DirectNet.c: 225:                     {
+{
+"226
+[; ;Driver_DirectNet.c: 226:                         objetoHTAD_DirectNet->contWDT = 0;
+[e = . *U _objetoHTAD_DirectNet 9 -> -> 0 `i `us ]
+"227
+[; ;Driver_DirectNet.c: 227:                         if(recebeuID == 0x22){
+[e $ ! == -> _recebeuID `i -> 34 `i 888  ]
+{
+"229
+[; ;Driver_DirectNet.c: 229:                             objetoHTAD_DirectNet->temperatureS1 = SRV_ADT7410_GetTemperature(SENSOR_S1, CELSIUS);
+[e = . *U _objetoHTAD_DirectNet 0 ( _SRV_ADT7410_GetTemperature (2 , . `E519 0 . `E515 0 ]
+"230
+[; ;Driver_DirectNet.c: 230:                             int valBruto = objetoHTAD_DirectNet->temperatureS1 * 128;
+[v _valBruto `i ~T0 @X0 1 a ]
+[e = _valBruto -> * . *U _objetoHTAD_DirectNet 0 -> -> 128 `i `f `i ]
+"231
+[; ;Driver_DirectNet.c: 231:                             bufferDadosValorBruto[1] = valBruto >> 8;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"232
+[; ;Driver_DirectNet.c: 232:                             bufferDadosValorBruto[0] = valBruto;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> _valBruto `uc ]
+"233
+[; ;Driver_DirectNet.c: 233:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS1,bufferDadosCELSIUS,sizeof(bufferDadosCELSIUS));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 0 &U _bufferDadosCELSIUS -> -> # _bufferDadosCELSIUS `ui `uc ]
+"234
+[; ;Driver_DirectNet.c: 234:                             objetoHTAD_DirectNet->temperatureS1 = SRV_ADT7410_GetTemperature(SENSOR_S1, FAHRENHEIT);
+[e = . *U _objetoHTAD_DirectNet 0 ( _SRV_ADT7410_GetTemperature (2 , . `E519 0 . `E515 1 ]
+"235
+[; ;Driver_DirectNet.c: 235:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS1,bufferDadosFAHRENHEIT,sizeof(bufferDadosFAHRENHEIT));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 0 &U _bufferDadosFAHRENHEIT -> -> # _bufferDadosFAHRENHEIT `ui `uc ]
+"236
+[; ;Driver_DirectNet.c: 236:                             ID_Responde = 0x22;
+[e = _ID_Responde -> -> 34 `i `uc ]
+"237
+[; ;Driver_DirectNet.c: 237:                             DirectNet_enviaDadosSensores();
+[e ( _DirectNet_enviaDadosSensores ..  ]
+"239
+[; ;Driver_DirectNet.c: 239:                         }
+}
+[e $U 889  ]
+"240
+[; ;Driver_DirectNet.c: 240:                         else if(recebeuID == 0x24){
+[e :U 888 ]
+[e $ ! == -> _recebeuID `i -> 36 `i 890  ]
+{
+"241
+[; ;Driver_DirectNet.c: 241:                             objetoHTAD_DirectNet->temperatureS2 = SRV_ADT7410_GetTemperature(SENSOR_S2, CELSIUS);
+[e = . *U _objetoHTAD_DirectNet 1 ( _SRV_ADT7410_GetTemperature (2 , . `E519 1 . `E515 0 ]
+"242
+[; ;Driver_DirectNet.c: 242:                             int valBruto = objetoHTAD_DirectNet->temperatureS2 * 128;
+[v _valBruto `i ~T0 @X0 1 a ]
+[e = _valBruto -> * . *U _objetoHTAD_DirectNet 1 -> -> 128 `i `f `i ]
+"243
+[; ;Driver_DirectNet.c: 243:                             bufferDadosValorBruto[1] = valBruto >> 8;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"244
+[; ;Driver_DirectNet.c: 244:                             bufferDadosValorBruto[0] = valBruto;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> _valBruto `uc ]
+"245
+[; ;Driver_DirectNet.c: 245:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS2,bufferDadosCELSIUS,sizeof(bufferDadosCELSIUS));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 1 &U _bufferDadosCELSIUS -> -> # _bufferDadosCELSIUS `ui `uc ]
+"246
+[; ;Driver_DirectNet.c: 246:                             objetoHTAD_DirectNet->temperatureS2 = SRV_ADT7410_GetTemperature(SENSOR_S2, FAHRENHEIT);
+[e = . *U _objetoHTAD_DirectNet 1 ( _SRV_ADT7410_GetTemperature (2 , . `E519 1 . `E515 1 ]
+"247
+[; ;Driver_DirectNet.c: 247:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS2,bufferDadosFAHRENHEIT,sizeof(bufferDadosFAHRENHEIT));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 1 &U _bufferDadosFAHRENHEIT -> -> # _bufferDadosFAHRENHEIT `ui `uc ]
+"248
+[; ;Driver_DirectNet.c: 248:                             ID_Responde = 0x24;
+[e = _ID_Responde -> -> 36 `i `uc ]
+"249
+[; ;Driver_DirectNet.c: 249:                             DirectNet_enviaDadosSensores();
+[e ( _DirectNet_enviaDadosSensores ..  ]
+"251
+[; ;Driver_DirectNet.c: 251:                         }
+}
+[e $U 891  ]
+"252
+[; ;Driver_DirectNet.c: 252:                         else if(recebeuID == 0x23){
+[e :U 890 ]
+[e $ ! == -> _recebeuID `i -> 35 `i 892  ]
+{
+"253
+[; ;Driver_DirectNet.c: 253:                             objetoHTAD_DirectNet->temperatureS3 = SRV_ADT7410_GetTemperature(SENSOR_S3, CELSIUS);
+[e = . *U _objetoHTAD_DirectNet 2 ( _SRV_ADT7410_GetTemperature (2 , . `E519 2 . `E515 0 ]
+"254
+[; ;Driver_DirectNet.c: 254:                             int valBruto = objetoHTAD_DirectNet->temperatureS3 * 128;
+[v _valBruto `i ~T0 @X0 1 a ]
+[e = _valBruto -> * . *U _objetoHTAD_DirectNet 2 -> -> 128 `i `f `i ]
+"255
+[; ;Driver_DirectNet.c: 255:                             bufferDadosValorBruto[1] = valBruto >> 8;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"256
+[; ;Driver_DirectNet.c: 256:                             bufferDadosValorBruto[0] = valBruto;
+[e = *U + &U _bufferDadosValorBruto * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosValorBruto `ui `ux -> _valBruto `uc ]
+"257
+[; ;Driver_DirectNet.c: 257:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS3,bufferDadosCELSIUS,sizeof(bufferDadosCELSIUS));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 2 &U _bufferDadosCELSIUS -> -> # _bufferDadosCELSIUS `ui `uc ]
+"258
+[; ;Driver_DirectNet.c: 258:                             objetoHTAD_DirectNet->temperatureS3 = SRV_ADT7410_GetTemperature(SENSOR_S3, FAHRENHEIT);
+[e = . *U _objetoHTAD_DirectNet 2 ( _SRV_ADT7410_GetTemperature (2 , . `E519 2 . `E515 1 ]
+"259
+[; ;Driver_DirectNet.c: 259:                             convertFloatToBuffer(objetoHTAD_DirectNet->temperatureS3,bufferDadosFAHRENHEIT,sizeof(bufferDadosFAHRENHEIT));
+[e ( _convertFloatToBuffer (3 , , . *U _objetoHTAD_DirectNet 2 &U _bufferDadosFAHRENHEIT -> -> # _bufferDadosFAHRENHEIT `ui `uc ]
+"260
+[; ;Driver_DirectNet.c: 260:                             ID_Responde = 0x23;
+[e = _ID_Responde -> -> 35 `i `uc ]
+"261
+[; ;Driver_DirectNet.c: 261:                             DirectNet_enviaDadosSensores();
+[e ( _DirectNet_enviaDadosSensores ..  ]
+"263
+[; ;Driver_DirectNet.c: 263:                         }
+}
+[e $U 893  ]
+"264
+[; ;Driver_DirectNet.c: 264:                         else if(recebeuID == 0x2B){
+[e :U 892 ]
+[e $ ! == -> _recebeuID `i -> 43 `i 894  ]
+{
+"267
+[; ;Driver_DirectNet.c: 267:                             objetoHTAD_DirectNet->DD = Driver_Analog_GetValueAN0();
+[e = . *U _objetoHTAD_DirectNet 3 ( _Driver_Analog_GetValueAN0 ..  ]
+"268
+[; ;Driver_DirectNet.c: 268:                             objetoHTAD_DirectNet->DT = Driver_Analog_GetValueAN1();
+[e = . *U _objetoHTAD_DirectNet 4 ( _Driver_Analog_GetValueAN1 ..  ]
+"269
+[; ;Driver_DirectNet.c: 269:                             objetoHTAD_DirectNet->CO2 = Driver_Analog_GetValueAN3();
+[e = . *U _objetoHTAD_DirectNet 5 ( _Driver_Analog_GetValueAN3 ..  ]
+"271
+[; ;Driver_DirectNet.c: 271:                             int valBruto = objetoHTAD_DirectNet->DD;
+[v _valBruto `i ~T0 @X0 1 a ]
+[e = _valBruto -> . *U _objetoHTAD_DirectNet 3 `i ]
+"273
+[; ;Driver_DirectNet.c: 273:                             bufferDadosDDDTCO2[0] = 0xAA;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 170 `i `uc ]
+"274
+[; ;Driver_DirectNet.c: 274:                             bufferDadosDDDTCO2[1] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 1 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"275
+[; ;Driver_DirectNet.c: 275:                             bufferDadosDDDTCO2[2] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 2 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"276
+[; ;Driver_DirectNet.c: 276:                             bufferDadosDDDTCO2[3] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 3 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"277
+[; ;Driver_DirectNet.c: 277:                             bufferDadosDDDTCO2[4] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 4 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"278
+[; ;Driver_DirectNet.c: 278:                             bufferDadosDDDTCO2[5] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 5 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"279
+[; ;Driver_DirectNet.c: 279:                             bufferDadosDDDTCO2[6] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 6 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"280
+[; ;Driver_DirectNet.c: 280:                             bufferDadosDDDTCO2[7] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 7 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"281
+[; ;Driver_DirectNet.c: 281:                             bufferDadosDDDTCO2[8] = 0x00;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 8 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 0 `i `uc ]
+"284
+[; ;Driver_DirectNet.c: 284:                             valBruto = objetoHTAD_DirectNet->DD;
+[e = _valBruto -> . *U _objetoHTAD_DirectNet 3 `i ]
+"287
+[; ;Driver_DirectNet.c: 287:                             bufferDadosDDDTCO2[10] = valBruto >> 8;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 10 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"288
+[; ;Driver_DirectNet.c: 288:                             bufferDadosDDDTCO2[9] = valBruto;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 9 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> _valBruto `uc ]
+"290
+[; ;Driver_DirectNet.c: 290:                             valBruto = valBruto = objetoHTAD_DirectNet->DT;
+[e = _valBruto = _valBruto -> . *U _objetoHTAD_DirectNet 4 `i ]
+"292
+[; ;Driver_DirectNet.c: 292:                             bufferDadosDDDTCO2[12] = valBruto >> 8;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 12 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"293
+[; ;Driver_DirectNet.c: 293:                             bufferDadosDDDTCO2[11] = valBruto;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 11 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> _valBruto `uc ]
+"295
+[; ;Driver_DirectNet.c: 295:                             valBruto = objetoHTAD_DirectNet->CO2;
+[e = _valBruto -> . *U _objetoHTAD_DirectNet 5 `i ]
+"297
+[; ;Driver_DirectNet.c: 297:                             bufferDadosDDDTCO2[14] = valBruto >> 8;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 14 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> >> _valBruto -> 8 `i `uc ]
+"298
+[; ;Driver_DirectNet.c: 298:                             bufferDadosDDDTCO2[13] = valBruto;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 13 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> _valBruto `uc ]
+"300
+[; ;Driver_DirectNet.c: 300:                             bufferDadosDDDTCO2[15] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 15 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"301
+[; ;Driver_DirectNet.c: 301:                             bufferDadosDDDTCO2[16] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 16 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"302
+[; ;Driver_DirectNet.c: 302:                             bufferDadosDDDTCO2[17] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 17 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"303
+[; ;Driver_DirectNet.c: 303:                             bufferDadosDDDTCO2[18] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 18 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"304
+[; ;Driver_DirectNet.c: 304:                             bufferDadosDDDTCO2[19] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 19 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"305
+[; ;Driver_DirectNet.c: 305:                             bufferDadosDDDTCO2[20] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 20 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"306
+[; ;Driver_DirectNet.c: 306:                             bufferDadosDDDTCO2[21] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 21 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"307
+[; ;Driver_DirectNet.c: 307:                             bufferDadosDDDTCO2[22] = 0xFF;
+[e = *U + &U _bufferDadosDDDTCO2 * -> -> -> 22 `i `ui `ux -> -> # *U &U _bufferDadosDDDTCO2 `ui `ux -> -> 255 `i `uc ]
+"308
+[; ;Driver_DirectNet.c: 308:                             DirectNet_enviaDadosDDDTCO2();
+[e ( _DirectNet_enviaDadosDDDTCO2 ..  ]
+"309
+[; ;Driver_DirectNet.c: 309:                         }
+}
+[e :U 894 ]
+[e :U 893 ]
+[e :U 891 ]
+[e :U 889 ]
+"310
+[; ;Driver_DirectNet.c: 310:                        stateDirectNet = 2;
+[e = _stateDirectNet -> -> 2 `i `uc ]
+"311
+[; ;Driver_DirectNet.c: 311:                        break;
+[e $U 884  ]
+"312
+[; ;Driver_DirectNet.c: 312:                     }
+}
+[e $U 895  ]
+"313
+[; ;Driver_DirectNet.c: 313:                     else{
+[e :U 887 ]
+{
+"314
+[; ;Driver_DirectNet.c: 314:                       EUSART1_Write(0x04);
+[e ( _EUSART1_Write (1 -> -> 4 `i `uc ]
+"315
+[; ;Driver_DirectNet.c: 315:                       stateDirectNet = 0;
+[e = _stateDirectNet -> -> 0 `i `uc ]
+"316
+[; ;Driver_DirectNet.c: 316:                     }
+}
+[e :U 895 ]
+"317
+[; ;Driver_DirectNet.c: 317:                 }
+}
+[e ++ _i -> 1 `i ]
+[e :U 886 ]
+[e $ < -> _i `ui -> _contRX `ui 883  ]
+[e :U 884 ]
+}
+"319
+[; ;Driver_DirectNet.c: 319:                 break;
+[e $U 873  ]
+"320
+[; ;Driver_DirectNet.c: 320:             case 2:
+[e :U 896 ]
+"321
+[; ;Driver_DirectNet.c: 321:                 i = 0;
+[e = _i -> 0 `i ]
+"322
+[; ;Driver_DirectNet.c: 322:                 for (i = 0; i < contRX; i++) {
+{
+[e = _i -> 0 `i ]
+[e $U 900  ]
+[e :U 897 ]
+{
+"323
+[; ;Driver_DirectNet.c: 323:                     if( recebeu[i] == 0x06){
+[e $ ! == -> *U + &U _recebeu * -> -> _i `ui `ux -> -> # *U &U _recebeu `ui `ux `i -> 6 `i 901  ]
+{
+"324
+[; ;Driver_DirectNet.c: 324:                         EUSART1_Write(0x04);
+[e ( _EUSART1_Write (1 -> -> 4 `i `uc ]
+"325
+[; ;Driver_DirectNet.c: 325:                         objetoHTAD_DirectNet->contWDT = 0;
+[e = . *U _objetoHTAD_DirectNet 9 -> -> 0 `i `us ]
+"326
+[; ;Driver_DirectNet.c: 326:                        break;
+[e $U 898  ]
+"327
+[; ;Driver_DirectNet.c: 327:                     }
+}
+[e :U 901 ]
+"328
+[; ;Driver_DirectNet.c: 328:                 }
+}
+[e ++ _i -> 1 `i ]
+[e :U 900 ]
+[e $ < -> _i `ui -> _contRX `ui 897  ]
+[e :U 898 ]
+}
+"329
+[; ;Driver_DirectNet.c: 329:                 stateDirectNet = 0;
+[e = _stateDirectNet -> -> 0 `i `uc ]
+"330
+[; ;Driver_DirectNet.c: 330:                 break;
+[e $U 873  ]
+"331
+[; ;Driver_DirectNet.c: 331:         }
+}
+[e $U 873  ]
+[e :U 874 ]
+[e [\ -> _stateDirectNet `i , $ -> 0 `i 875
+ , $ -> 1 `i 882
+ , $ -> 2 `i 896
+ 873 ]
+[e :U 873 ]
+"333
+[; ;Driver_DirectNet.c: 333:         i = 0;
+[e = _i -> 0 `i ]
+"334
+[; ;Driver_DirectNet.c: 334:         while(EUSART1_is_tx_done() == 0){i++;recebeu[i] = 0;if(i > contRX)i = 0; }
+[e $U 902  ]
+[e :U 903 ]
+{
+[e ++ _i -> 1 `i ]
+[e = *U + &U _recebeu * -> -> _i `ui `ux -> -> # *U &U _recebeu `ui `ux -> -> 0 `i `uc ]
+[e $ ! > -> _i `ui -> _contRX `ui 905  ]
+[e = _i -> 0 `i ]
+[e :U 905 ]
+}
+[e :U 902 ]
+[e $ == -> ( _EUSART1_is_tx_done ..  `i -> 0 `i 903  ]
+[e :U 904 ]
+"335
+[; ;Driver_DirectNet.c: 335:         do { LATCbits.LATC5 = 0; } while(0);
+[e :U 908 ]
+{
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 907 ]
+"337
+[; ;Driver_DirectNet.c: 337:        contRX = 0;
+[e = _contRX -> -> 0 `i `us ]
+"338
+[; ;Driver_DirectNet.c: 338:        recebeu_Serial = 0;
+[e = _recebeu_Serial -> -> 0 `i `a ]
+"339
+[; ;Driver_DirectNet.c: 339:     }
+}
+[e :U 864 ]
+"343
+[; ;Driver_DirectNet.c: 343: }
+[e :UE 863 ]
+}
+"346
+[; ;Driver_DirectNet.c: 346: void DirectNet_Init(void) {
+[v _DirectNet_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _DirectNet_Init ]
+[f ]
+"348
+[; ;Driver_DirectNet.c: 348: }
+[e :UE 909 ]
+}
